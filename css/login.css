@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300&display=swap");
+
+:root {
+
+  --grey: rgb(138, 138, 138);
+  --white: white;
+  --colorGazoil: #7db69e;
+  --colorRed: #f44242;
+  --colorGrey: #3a3333;
+}
+body {
+  margin-top : -1%;
+  margin-left : auto;
+  font-family: "Lato", sans-serif;
+  color: var(--grey);
+  background-color: var(--colorGazoil);
+}
+
+.txt-color-gazoil {
+  color: var(--colorGazoil);
+}
+.txt-color-red {
+  color: var(--colorRed);
+}
+.txt-color-white {
+  color: var(--white);
+}
+
+.container, p{
+  color: rgb(0, 0, 0);
+}
+
+.img{
+  margin: 0;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bijour {
+  color: var(--grey);
+  text-align: center;
+}
+
+.boxPanel {
+  margin-top: 4%;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  width: 350px;
+  height: 240px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: solid white;
+  color: var(--colorGrey);
+  background-color: #7db69e4b;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameTxtBox {
+  display: flex;
+  justify-content: end;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 0.8rem ;
+  color: var(--colorGrey);
+}
+.nameBox {
+  margin-left: 60px;
+  font-size: 0.6rem ;
+  color: var(--grey);
+}
+.nameBox:hover {
+  z-index: 5;
+  transform: scale(1.2, 1.2);
+}
+
+.passwordTxtBox {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  font-size: 0.8rem ;
+  color: var(--colorGrey);
+}
+.passwordBox {
+  position: relative;
+  margin-left: 10px;
+  font-size: 0.6rem ;
+  color: var(--grey);
+}
+.passwordBox:hover {
+  z-index: 5;
+  transform: scale(1.2, 1.2);
+}
+
+.checkbox{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+#warning{
+  color: var(--colorRed);
+  font-size: 0.8rem;
+}
+
+.btLogin {
+  width: 100px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}

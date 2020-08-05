@@ -100,6 +100,9 @@ h4 {
   background-color: #e1e1e1;
 }
 
+li{
+  background-color: #ffffff;
+}
 .credit {
   background-color: var(--colorGazoil);
 }
@@ -124,7 +127,7 @@ input[type="text"] {
 input[type="number"] {
   width: 120px;
 }
-button {
+#btPunch {
   border: none;
   background: none;
   transform: scaleX(-1);
@@ -132,9 +135,58 @@ button {
 }
 button:hover {
   cursor: pointer;
+
 }
 
 .wrapper {
   max-width: 1260px;
   margin: auto;
+}
+
+.inFade{
+  position: relative;
+  height: 95%;
+  width: 95%;
+  transition: all 0.5s ease-out;
+}
+
+.inFade:hover
+{
+  z-index: 5;
+  transform: scale(1.1, 1.1);
+}
+.inFade:last-child
+{
+  -webkit-animation: inFade 1.5s;
+  animation: inFade 1.5s;
+}
+
+/* exemple*/
+.in-Fade{
+  position: relative;
+  height: 95%;
+  width: 95%;
+  transition: all 0.5s ease-out;
+}
+.in-Fade:hover
+{
+  z-index: 5;
+  transform: scale(1.1, 1.1);
+}
+
+@-webkit-keyframes inFade {
+  from {transform: scale(1.3, 1.3);
+    opacity: 0;
+  }
+  to {transform: scale(1, 1);
+  opacity: 1;
+  }
+
+}@keyframes inFade {
+  from {transform: scale(1.3, 1.3);
+    opacity: 0;
+  }
+  to {transform: scale(1, 1);
+  opacity: 1;
+  }
 }
